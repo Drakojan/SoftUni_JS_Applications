@@ -1,0 +1,30 @@
+#notifications div {
+    top: 4rem;
+    position: absolute;
+    border-radius: 7px;
+    display: none;
+    z-index: 1;
+    opacity: .8;
+}
+
+#notifications {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+td.description{
+    width: 50%;
+}
+
+#img{
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+}
+
+#noCausesMsg{
+    position: fixed;
+    top: 25%;
+    left: 50%;
+}

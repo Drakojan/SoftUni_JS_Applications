@@ -1,0 +1,43 @@
+<!-- Dashboard (All Causes View) -->
+{{>header}}
+
+<div id="dashboard-holder"></div>
+
+{{#each ideas}}
+
+
+    <div class="card overflow-hidden current-card details" style="width: 20rem; height: 18rem;">
+        <div class="card-body">
+            <p class="card-text">{{ title }}</p>
+        </div>
+        <img class="card-image" src={{ imageURL }} > 
+        {{!-- alt="Card image cap" --}}
+        <a class="btn" href=("#/idea/details/{{ id }}>Details</a>
+    </div>
+
+{{else}}
+<h1>No ideas yet! Be the first one :)</h1>
+{{/each}}
+</div>
+
+{{!-- <div style="margin-top:3%; padding-top: 3%;" class="container"></div>
+        <div style="margin-bottom:25%;" class="row">
+            <div class="col-lg-12">
+                <div class="card mt-4">
+                    <img style="max-width: 1200px; height: auto; border-radius:25px;" class="card-img-top img-fluid"
+                        src={{pictureUrl}} alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">{{cause}}</h3>
+                        <p class="card-text">{{description}}</p>
+                        <a href="#/cause/details/{{ id }}" class="btn btn-success">Become a donor $$$</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <h1 id = 'noCausesMsg' class="text-center">NO CAUSES :(</h1>
+    {{/each}} --}}
+
+{{>footer}}
+<!-- ./Dashboard (All Causes View) -->
